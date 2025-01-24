@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Outcomes - D. Y. Patil College Of Engineering, Akurdi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #0056b3;
+        }
+
+        .profile-icon {
+            font-size: 1.5rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #0056b3;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        tr:hover {
+            background-color: #e9ecef;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .nav-links {
+                margin-top: 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="logo.png" alt="College Logo" class="logo">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="attainment.html">Attainment</a>
+            <a href="#upload">Upload</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#profile" class="profile-icon">👤</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Course Outcomes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Statements</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">C203.1</td>
+                    <td contenteditable="true">Apply constructs- sequence, selection and iteration; classes and objects, inheritance, use of predefined classes from libraries while developing software.</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">C203.2</td>
+                    <td contenteditable="true">Design object-oriented solutions for small systems involving multiple objects using concept inheritance.</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">C203.3</td>
+                    <td contenteditable="true">Develop application using polymorphism concept to solve real time problem.</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">C203.4</td>
+                    <td contenteditable="true">Develop application using File Handling Concept</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">C203.5</td>
+                    <td contenteditable="true">Demonstrate Exception Handling concepts by developing an application using object oriented programming language (C++).</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">C203.6</td>
+                    <td contenteditable="true">Develop application using Template and Standard Template Library and analyze its strengths.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <a href="Attainment.html">
+        <button type="submit" style="
+        background: linear-gradient(to right, #0056b3, #003d82);
+        color: #fff;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        margin-left: 400px;
+        margin-top: 30px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.3s ease;
+    " 
+    onmouseover="this.style.background='linear-gradient(to right, #003d82, #0056b3)'; this.style.transform='scale(1.05)';" 
+    onmouseout="this.style.background='linear-gradient(to right, #0056b3, #003d82)'; this.style.transform='scale(1)';">
+        Next
+    </button></a>
+    
+    </div>
+
+    <footer>
+        <p>&copy; 2022 D. Y. Patil College Of Engineering, Akurdi. All rights reserved.</p>
+    </footer>
+    <script>
+        const saveButton = document.querySelector('button[type="submit"]');
+    
+        saveButton.addEventListener('click', () => {
+            const rows = document.querySelectorAll('tbody tr');
+            const tableData = Array.from(rows).map(row => {
+                const cells = row.querySelectorAll('td');
+                return {
+                    courseName: cells[0].innerText,
+                    statement: cells[1].innerText
+                };
+            });
+            console.log('Updated Table Data:', tableData);
+            alert('Table data saved! Check the console for details.');
+        });
+    </script>
+    
+</body>
+</html>
